@@ -1,0 +1,40 @@
+{
+  "cmd_script": {
+    "usingModule": "using",
+    "markBreakPointByOffsetAddress": "mark",
+    "markBreakPointByDynamicAddress": "markd",
+    "saveCmd": "save",
+    "showCmd": "show",
+    "removeCmd": "rm",
+    "execCmd": "exec",
+    "calcDynamicMemoryAddress": "dy",
+    "calcStaticOffsetAddress": "offset",
+    "writeMemory": "memwrite",
+    "nopMemory": "nop",
+    "getPointer": "ptr",
+    "readMemory": "memread",
+    "parseSwiftString": "ss",
+    "parseSwiftData": "sd",
+    "help": "hhelp"
+  },
+  "cmd_alias": {
+    "image list -o -f": "module",
+    "disassemble -s $pc-0x20 -e $pc+0x24": "dispc",
+    "thread step-in": "tsi",
+    "thread step-inst-over": "tni",
+    "thread continue": "tc",
+    "po (char *)": "cstring",
+    "register write": "regwrite",
+    "register read": "regread",
+    "breakpoint command add": "addcom"
+  },
+  "cus_cmd": [
+    "show"
+  ],
+  "cmd_notes": [
+    "process connect connect: //localhost:20222",
+    "debugserver 0.0.0.0: 20222 -a 15056",
+    "debugserver 0.0.0.0: 20223 -a \"DHgate\"",
+    "debugserver -x backboard  0.0.0.0: 20222 [path]"
+  ]
+}
