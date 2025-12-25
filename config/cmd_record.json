@@ -6,41 +6,5 @@
     {
         "command": "b sysctl",
         "desc": "在系统调用函数上标记断点"
-    },
-    {
-        "command": "using SwiftDemo.debug.dylib",
-        "desc": ""
-    },
-    {
-        "command": "mark A8F4",
-        "desc": ""
-    },
-    {
-        "command": "mark b0c4",
-        "desc": "ret 地址"
-    },
-    {
-        "command": "using ServiceCore",
-        "desc": "Globoplay 应用 越狱检测对抗"
-    },
-    {
-        "command": "mark 17F750",
-        "desc": "Globoplay 应用的 ServiceCore 框架的 initialize_framework_bundles 函数"
-    },
-    {
-        "command": "mark 17F818",
-        "desc": "App_Globoplay 的 -[NSArray filteredArrayUsingPredicate:]"
-    },
-    {
-        "command": "mark 100BB7668",
-        "desc": "App_Globoplay 将 Swift appUID 的部分传入的地方"
-    },
-    {
-        "command": "mark 100BB9824 100BB992C",
-        "desc": "100BB9824 对应的是调用 setCustomerUserID 函数的外层函数； 100BB992C 对应的是调用 setCustomerUserID 的地址"
-    },
-    {
-        "command": "mark 1005B7924 1005B7C74 1005B7D84",
-        "desc": "生成 appUID 的一个关键函数，及其内部的一些关键地址"
     }
 ]
